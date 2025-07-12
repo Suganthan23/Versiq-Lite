@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Versiq</title>
+
+    <!-- Fonts & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+
+    <style>
+        .scrollbar-hide::-webkit-scrollbar {
+            display: none;
+        }
+
+        .scrollbar-hide {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+
+        body::-webkit-scrollbar {
+            width: 0px;
+            background: transparent;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+
+        .font-playfair {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .font-montserrat {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .font-raleway {
+            font-family: 'Raleway', sans-serif;
+        }
+
+        .font-poppins {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            font-family: 'Raleway', sans-serif;
+            overflow-x: hidden;
+        }
+    </style>
+</head>
+
+<body class="scrollbar-hide">
+
+    <!-- Top Banner -->
+    <section id="sidenav" class="bg-blue-300 text-lg flex p-2 pb-5 h-10 text-center justify-center gap-2 pb-8">
+        <p>Sign up and</p>
+        <b class="font-bold">GET 25% OFF</b>
+        <p>for your first order</p>
+        <i id="closenav" class="fa-solid fa-xmark text-2xl pl-5"></i>
+    </section>
+
+    <!-- Navbar -->
+    <nav class="font-bold bg-white p-3 flex items-center justify-between sticky top-0 z-10">
+        <h1 class="font-playfair text-blue-300 text-5xl pl-5 pb-5">Versiq</h1>
+        <svg id="menuicon1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="h-6 w-6 md:hidden">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+        <ul class="gap-10 text-black text-xl pr-5 hidden md:flex">
+            <li><a class="hover:underline hover:text-blue-300" href="index.html">Home</a></li>
+            <li><a href="#new-arrivals" class="hover:underline hover:text-blue-300">New Arrivals</a></li>
+            <li><a href="#most-wanted" class="hover:underline hover:text-blue-300">Most Wanted</a></li>
+            <li><a class="hover:underline hover:text-blue-300" href="collections.html">Collections</a></li>
+            <li><a class="hover:underline hover:text-blue-300" href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!--Side Navbar-->
+    <section id="sidenav1"
+        class="bg-blue-300 text-black text-right fixed z-20 top-0 transition-all duration-1000 text-decoration-none"
+        style="width: 30%; height: 100vh; right:-30%">
+        <div class="text-right p-5">
+            <p id="closenav1" class="inline cursor-pointer"><i id="closenav"
+                    class="fa-solid fa-xmark text-2xl pl-5 pr-5"></i></p>
+        </div>
+        <ul class="pr-10">
+            <li><a class="hover:underline hover:text-white" href="index.html">Home</a></li>
+            <li><a href="#new-arrivals" class="hover:underline hover:text-white">New Arrivals</a></li>
+            <li><a href="#most-wanted" class="hover:underline hover:text-white">Most Wanted</a></li>
+            <li><a class="hover:underline hover:text-white" href="collections.html">Collections</a></li>
+            <li><a class="hover:underline hover:text-white" href="contact.html">Contact Us</a></li>
+        </ul>
+    </section>
+
+    <!-- Shop Now -->
+    <section class="mt-5 pl-3">
+        <div class="flex flex-wrap justify-center gap-x-4">
+            <img src="./images/image2.jpeg" alt="shop now" class="w-60 h-80 object-cover rounded-xl" />
+            <img src="./images/image3.jpg" alt="shop now" class="w-60 h-80 object-cover rounded-xl" />
+            <img src="./images/image4.jpg" alt="shop now" class="w-60 h-80 object-cover rounded-xl" />
+            <img src="./images/image5.jpg" alt="shop now" class="w-60 h-80 object-cover rounded-xl" />
+        </div>
+    </section>
+
+    <!-- Brands -->
+    <section class="mt-20 mb-10 pl-3">
+        <h1 class="text-3xl pl-5 font-bold">Brands</h1>
+        <div class="flex justify-between text-center mt-5 text-xl">
+            <div class="pl-20">
+                <img src="./images/brand1.jpeg" alt="brand1" class="w-17 h-14 object-cover" />
+                <p>Puma</p>
+            </div>
+            <div>
+                <img src="./images/brand2.png" alt="brand2" class="w-15 h-14 object-cover" />
+                <p>Adidas</p>
+            </div>
+            <div>
+                <img src="./images/brand3.png" alt="brand3" class="w-14 h-14 object-cover" />
+                <p>Nike</p>
+            </div>
+            <div>
+                <img src="./images/brand4.jpeg" alt="brand4" class="w-14 h-14 object-cover" />
+                <p>LV</p>
+            </div>
+            <div>
+                <img src="./images/brand6.jpeg" alt="brand6" class="w-14 h-14 object-cover" />
+                <p>Gucci</p>
+            </div>
+            <div class="pr-20">
+                <img src="./images/brand5.jpeg" alt="brand5" class="w-16 h-14 object-cover" />
+                <p>Zara</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Experience -->
+    <section class="mt-20 mb-10 pl-3">
+        <div class="flex justify-between">
+            <h1 class="text-3xl pl-5 font-bold">Why Shop with Versiq?</h1>
+            <p class="text-xl mt-2 pr-20">|| We bring together the best brands with an unmatched shopping experience ||
+            </p>
+        </div>
+    </section>
+
+    <!--Cards-->
+    <section class="mb-10">
+        <div class="grid grid-cols-1 ml-10 mr-10 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-8">
+            <!-- Card 1 -->
+            <div class="bg-blue-100 p-6 rounded-2xl shadow-sm">
+                <div class="text-3xl mb-2"><i class="fa-solid fa-medal"></i></div>
+                <h3 class="font-semibold text-lg mb-2">Authentic Brands</h3>
+                <p class="text-sm text-gray-600">We partner directly with trusted global brands to guarantee 100%
+                    original products.</p>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="bg-blue-100 p-6 rounded-2xl shadow-sm">
+                <div class="text-3xl mb-2"><i class="fa-regular fa-face-smile"></i></div>
+                <h3 class="font-semibold text-lg mb-2">Customer Satisfaction</h3>
+                <p class="text-sm text-gray-600">Our top priority is ensuring every customer walks away happy and
+                    confident with their order.</p>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="bg-blue-100 p-6 rounded-2xl shadow-sm">
+                <div class="text-3xl mb-2"><i class="fa-solid fa-star"></i></div>
+                <h3 class="font-semibold text-lg mb-2">Latest Arrivals</h3>
+                <p class="text-sm text-gray-600">Stay ahead of the trends with fresh arrivals from leading fashion
+                    and lifestyle labels.</p>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="bg-blue-100 p-6 rounded-2xl shadow-sm">
+                <div class="text-3xl mb-2"><i class="fa-solid fa-truck-fast"></i></div>
+                <h3 class="font-semibold text-lg mb-2">Free & Fast Delivery</h3>
+                <p class="text-sm text-gray-600">Enjoy speedy, reliable shipping on every order — no hidden fees, no
+                    delays.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- New Arrivals -->
+    <!--New Arrivals-->
+    <section id="new-arrivals" class="mt-20 mb-10 pl-3">
+        <h1 class="text-3xl pl-5 font-bold">New Arrivals</h1>
+        <div class="flex flex-wrap justify-center gap-16 mt-10">
+            <!-- One image card -->
+            <div
+                class="relative group overflow-hidden rounded-lg transform hover:scale-110 transition-transform duration-300 shadow-2xl">
+                <img src="./images/na1.webp" alt="shirt" class="object-cover w-60 h-80" />
+                <div class="absolute bottom-10 left-12 flex items-center justify-center">
+                    <button
+                        class="bg-blue-300 text-white font-medium px-5 py-2 rounded-md shadow-md transition hover:bg-gray-100 hover:text-blue-300">
+                        Shop Now <i class="fa-solid fa-arrow-right ml-2"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div
+                class="relative group overflow-hidden rounded-lg transform hover:scale-110 transition-transform duration-300 shadow-2xl">
+                <img src="./images/na2.webp" alt="shirt" class="object-cover w-60 h-80" />
+                <div class="absolute bottom-10 left-12 flex items-center justify-center">
+                    <button
+                        class="bg-blue-300 text-white font-medium px-5 py-2 rounded-md shadow-md transition hover:bg-gray-100 hover:text-blue-300">
+                        Shop Now <i class="fa-solid fa-arrow-right ml-2"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div
+                class="relative group overflow-hidden rounded-lg transform hover:scale-110 transition-transform duration-300 shadow-2xl">
+                <img src="./images/na3.jpg" alt="shirt" class="w-60 h-80 object-cover" />
+                <div class="absolute bottom-10 left-12 flex items-center justify-center">
+                    <button
+                        class="bg-blue-300 text-white font-medium px-5 py-2 rounded-md shadow-md transition hover:bg-gray-100 hover:text-blue-300">
+                        Shop Now <i class="fa-solid fa-arrow-right ml-2"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div
+                class="relative group overflow-hidden rounded-lg transform hover:scale-110 transition-transform duration-300 shadow-2xl">
+                <img src="./images/na4.webp" alt="shirt" class="w-60 h-80 object-cover" />
+                <div class="absolute bottom-10 left-12 flex items-center justify-center">
+                    <button
+                        class="bg-blue-300 text-white font-medium px-5 py-2 rounded-md shadow-md transition hover:bg-gray-100 hover:text-blue-300">
+                        Shop Now <i class="fa-solid fa-arrow-right ml-2"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Most Wanted -->
+    <!--Most Wanted-->
+    <section id="most-wanted" class="mt-20 mb-10 pl-3">
+        <h1 class="font-monsterrat text-3xl pl-5 font-bold">Most Wanted</h1>
+        <section class="mt-10 px-4">
+
+            <!-- Scrollable wrapper -->
+            <div class="max-w-full overflow-x-auto scrollbar-hide">
+                <!-- Scrollable container -->
+                <div class="flex space-x-6 scroll-smooth snap-x snap-mandatory pb-4 w-max">
+
+                    <!-- Card 1 -->
+                    <div class="min-w-[200px] snap-start shrink-0 bg-white rounded-lg shadow-md">
+                        <div class="relative">
+                            <span
+                                class="absolute top-2 left-2 bg-blue-300 text-white px-2 py-1 text-s rounded">#1</span>
+                            <img src="./images/mw1.webp" alt="shirt 1" class="w-full h-80 object-cover rounded-lg" />
+                            <i
+                                class="fa-solid fa-heart text-2xl text-white absolute bottom-5 right-5 hover:text-blue-300"></i>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="min-w-[200px] snap-start shrink-0 bg-white rounded-lg shadow-md">
+                        <div class="relative">
+                            <span
+                                class="absolute top-2 left-2 bg-blue-300 text-white px-2 py-1 text-s rounded">#2</span>
+                            <img src="./images/mw2.webp" alt="shirt 2" class="w-full h-80 object-cover rounded-lg" />
+                            <i
+                                class="fa-solid fa-heart text-2xl text-white absolute bottom-5 right-5 hover:text-blue-300"></i>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="min-w-[200px] snap-start shrink-0 bg-white rounded-lg shadow-md">
+                        <div class="relative">
+                            <span
+                                class="absolute top-2 left-2 bg-blue-300 text-white px-2 py-1 text-s rounded">#3</span>
+                            <img src="./images/mw3.webp" alt="shirt 3" class="w-full h-80 object-cover rounded-lg" />
+                            <i
+                                class="fa-solid fa-heart text-2xl text-white absolute bottom-5 right-5 hover:text-blue-300"></i>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="min-w-[200px] snap-start shrink-0 bg-white rounded-lg shadow-md">
+                        <div class="relative">
+                            <span
+                                class="absolute top-2 left-2 bg-blue-300 text-white px-2 py-1 text-s rounded">#4</span>
+                            <img src="./images/mw4.webp" alt="shirt 4" class="w-full h-80 object-cover rounded-lg" />
+                            <i
+                                class="fa-solid fa-heart text-2xl text-white absolute bottom-5 right-5 hover:text-blue-300"></i>
+                        </div>
+                    </div>
+
+                    <!-- Card 5 -->
+                    <div class="min-w-[200px] snap-start shrink-0 bg-white rounded-lg shadow-md">
+                        <div class="relative">
+                            <span
+                                class="absolute top-2 left-2 bg-blue-300 text-white px-2 py-1 text-s rounded">#5</span>
+                            <img src="./images/mw5.webp" alt="shirt 5" class="w-full h-80 object-cover rounded-lg" />
+                            <i
+                                class="fa-solid fa-heart text-2xl text-white absolute bottom-5 right-5 hover:text-blue-300"></i>
+                        </div>
+                    </div>
+
+                    <!-- Card 6 -->
+                    <div class="min-w-[200px] snap-start shrink-0 bg-white rounded-lg shadow-md">
+                        <div class="relative">
+                            <span
+                                class="absolute top-2 left-2 bg-blue-300 text-white px-2 py-1 text-s rounded">#6</span>
+                            <img src="./images/mw6.webp" alt="shirt 6" class="w-full h-80 object-cover rounded-lg" />
+                            <i
+                                class="fa-solid fa-heart text-2xl text-white absolute bottom-5 right-5 hover:text-blue-300"></i>
+                        </div>
+                    </div>
+
+                    <!-- Card 7 -->
+                    <div class="min-w-[200px] snap-start shrink-0 bg-white rounded-lg shadow-md">
+                        <div class="relative">
+                            <span
+                                class="absolute top-2 left-2 bg-blue-300 text-white px-2 py-1 text-s rounded">#7</span>
+                            <img src="./images/mw7.jpg" alt="shirt 7" class="w-full h-80 object-cover rounded-lg" />
+                            <i
+                                class="fa-solid fa-heart text-2xl text-white absolute bottom-5 right-5 hover:text-blue-300"></i>
+                        </div>
+                    </div>
+
+                    <!-- Card 8 -->
+                    <div class="min-w-[200px] snap-start shrink-0 bg-white rounded-lg shadow-md">
+                        <div class="relative">
+                            <span
+                                class="absolute top-2 left-2 bg-blue-300 text-white px-2 py-1 text-s rounded">#8</span>
+                            <img src="./images/mw8.jpg" alt="shirt 8" class="w-full h-80 object-cover rounded-lg" />
+                            <i
+                                class="fa-solid fa-heart text-2xl text-white absolute bottom-5 right-5 hover:text-blue-300"></i>
+                        </div>
+                    </div>
+
+                    <!-- Card 9 -->
+                    <div class="min-w-[200px] snap-start shrink-0 bg-white rounded-lg shadow-md">
+                        <div class="relative">
+                            <span
+                                class="absolute top-2 left-2 bg-blue-300 text-white px-2 py-1 text-s rounded">#9</span>
+                            <img src="./images/mw9.webp" alt="shirt 9" class="w-full h-80 object-cover rounded-lg" />
+                            <i
+                                class="fa-solid fa-heart text-2xl text-white absolute bottom-5 right-5 hover:text-blue-300"></i>
+                        </div>
+                    </div>
+
+                    <!-- Card 10 -->
+                    <div class="min-w-[200px] snap-start shrink-0 bg-white rounded-lg shadow-md">
+                        <div class="relative">
+                            <span
+                                class="absolute top-2 left-2 bg-blue-300 text-white px-2 py-1 text-s rounded">#10</span>
+                            <img src="./images/mw10.webp" alt="shirt 10"
+                                class="w-full h-80 object-cover rounded-t-lg" />
+                            <i
+                                class="fa-solid fa-heart text-2xl text-white absolute bottom-5 right-5 hover:text-blue-300"></i>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </section>
+
+
+    <!-- Offer -->
+    <section
+        class="mt-20 mb-10 flex justify-center relative group overflow-hidden transition-opacity duration-500 opacity-0 hover:opacity-100">
+        <img src="./images/offer.webp" alt="offer">
+        <div class="absolute bottom-10 flex items-center justify-center">
+            <button
+                class="bg-blue-300 text-white font-medium px-5 py-2 rounded-md shadow-md transition hover:bg-gray-100 hover:text-blue-300">
+                <a href="collection.html">Shop Now <i class="fa-solid fa-arrow-right ml-2"></i></a>
+            </button>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="text-center mt-10 mb-10">
+        <h1 class="text-3xl font-bold text-center mt-5">Join our News Letter</h1>
+        <p class="text-xl">Be the first to know about exclusive offers and new arrivals at Versiq.</p>
+        <input id="newsletter-email" type="text" class="border border-black rounded-lg p-2 m-3 w-3/4"
+            placeholder="Your email address" />
+        <br />
+        <button class="bg-blue-300 text-white text-xl p-2 text-center rounded-lg mb-3">Submit</button>
+    </section>
+
+    <!-- Footer -->
+    <section class="bg-blue-300 flex flex-col gap-5 mt-5 p-10">
+        <h1 class="font-playfair text-5xl font-bold mb-5">Versiq</h1>
+        <p class="text-2xl font-bold">Your one-stop destination for premium fashion from top global brands.</p>
+        <div class="flex space-x-8 mt-2 text-3xl">
+            <h3 class="text-2xl">Follow Us On :</h3>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-x-twitter"></i>
+        </div>
+        <p class="text-xl">© 2025 Versiq, All rights reserved.</p>
+    </section>
+
+    <!-- JS -->
+    <script src="index.js"></script>
+</body>
+
+</html>
