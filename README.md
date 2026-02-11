@@ -7,7 +7,7 @@ It focuses on clean visuals, simple interactions, and a smooth browsing experien
 
 ## 🔗 Live Demo
 
-versiq-lite.vercel.app  
+[![Live Demo](https://img.shields.io/badge/Live_Demo-Versiq_Lite-%23111111?style=for-the-badge)](https://versiq-lite.vercel.app)
 
 ---
 
